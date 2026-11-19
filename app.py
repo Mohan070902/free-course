@@ -8,7 +8,7 @@ app.secret_key = "my-secret-key"
 @app.route("/") 
 def home(): 
     return render_template("home.html")
-
+print(10+20)
 
 @app.route("/login", methods=["POST"])
 def login():
