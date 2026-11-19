@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{%block title%} MY Project {%endblock%}</title>
+</head>
+<body>
+    <a href="{{url_for('home')}}">HOME</a>
+    <a href="{{url_for('about')}}">ABOUT</a>
+    <a href="{{url_for('course')}}">COURSE</a>
+    <a href="{{url_for('contact')}}">CONTACT</a>
+    
+    <hr>
+
+    {%block content%}
+    <h3>python</h3>
+    {%endblock%}
+
+    <hr>
+    <div>
+        <p>copyrights @ 2026</p>
+    </div>
+</body>
+</html>

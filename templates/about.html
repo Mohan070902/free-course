@@ -1,0 +1,23 @@
+{%extends "base.html"%}
+
+{%block title%} ABOUT {%endblock%}
+
+{%block content%}
+<h1>ABOUT PAGE</h1>
+<table border="2">
+    <tr>
+        <th>ID</th>
+        <th>NAME</th>
+        <th>COURSE</th>
+    </tr>
+
+    {%for i in students%}
+    <tr>
+        <td>{{i.id}}</td>
+        <td>{{i.name}}</td>
+        <td>{{i.course}}</td>
+    </tr>
+    {%endfor%}
+</table>
+<br><br>
+{%endblock%}

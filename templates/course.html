@@ -1,0 +1,21 @@
+{%extends "base.html"%}
+
+{%block title%} COURSE {%endblock%}
+
+{%block content%}
+<h1>COURSE PAGE</h1>
+
+<table border="2">
+    <tr>
+        <th>ID</th>
+        <th>NAME</th>
+        <th>COURSE</th>
+    </tr>
+
+    <tr>
+        <td>{{students.id}}</td>
+        <td>{{students.name}}</td>
+        <td>{{students.course}}</td>
+    </tr>
+</table>
+{%endblock%}
